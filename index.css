@@ -1,0 +1,136 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    padding: 24px 24px 48px;
+    background-color: #555990;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.content {
+    padding: 24px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #f7f7ff;
+}
+
+.create-task-block {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: -48px;
+    box-shadow: 0 1px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+.filter-task-block {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+.create-task-block + .filter-task-block {
+    margin-top: 24px;
+}
+
+.task-input,
+.filter-input {
+    width: 100%;
+    height: 30px;
+    border-width: 0 0 1px 0;
+    border-color: #706565;
+    font-size: 16px;
+}
+
+.task-input:focus,
+.filter-input:focus {
+    outline: none
+}
+
+::placeholder {
+    color: #b0a5a5;
+}
+
+.input-field {
+    width: 70%;
+}
+
+.create-task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #45a594;
+    color: white;
+    font-size: 14px;
+}
+
+.btn--error {
+    background-color: #dd5764;
+}
+
+.input-field + .btn {
+    margin-top: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.collection-item {
+    display: flex;
+    padding: 12px 0;
+    color: #4d4343;
+}
+
+.collection-item + .collection-item {
+    border-top: 1px solid lightgray;
+}
+
+.edit-item,
+.delete-item {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-item {
+    color: #dd5764;
+}
+
+.edit-item {
+    color: #535bd0;
+}
+
+.edit-item + .delete-item {
+    margin-left: 8px;
+}
